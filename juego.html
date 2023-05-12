@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./imagenes/logo.png">
+    <title>Proyecto-Flinal</title>
+</head>
+<body class="body-day">
+    <nav>
+        <a href="./index.html">
+        <svg width="200" hidden="80">
+            <rect x="45" y="5" width="60"height="35" rx="5" id="mon1"fill="#f0e9d2" ></rect>
+            <rect x="50" y="10" width="50"height="25" rx="5" id="mon2" fill="#495579"></rect>
+            <polygon points="55 45, 95 45, 115 62, 30 62" fill="#f0e9d2" id="tec1"></polygon>
+            <polygon points="57 48, 92 48, 104 58, 43 58" fill="#495579" id="tec2"></polygon>
+        </svg>
+    </a>
+        <ul class="menu"> 
+            <li class="item-menu">
+                <a class="item-link" href="./histrotia.html">HISTORIA</a>
+            </li>
+            <li class="item-menu">
+                <a class="item-link" href="./juego.html">JUGEMOS</a>    
+            </li>
+        </ul>   
+    </nav>
+<header>
+    <h1>JUGEMOS UN POCO</h1>
+</header>    
+<main>
+    <h2>Armemos el rompecabeza y veamos que imagen es...</h2>
+    <selection class="juego">
+        <div class="cajas">
+            <div class="caja" id="cajasoltar">
+                <p>Arrastre y suelte la imágen aqui</p>
+            </div>
+            <div class="caja" id="cajasoltar2">
+                <p>Arrastre y suelte la imágen aqui</p>
+            </div>
+            <div class="caja" id="cajasoltar3">
+                <p>Arrastre y suelte la imágen aqui</p>
+            </div>
+        </div>
+        <div id="cajaimagenes">
+            <img ondragstart="onarrastre(event)" id="imagen1" src="./imagenes/rompe2.png" alt="imagen-rompecabeza">
+            <img ondragstart="onarrastre(event)" id="imagen2" src="./imagenes/Rompe1.png" alt="imagen-rompecabeza">
+            <img ondragstart="onarrastre(event)" id="imagen3" src="./imagenes/Rompe3.png" alt="imagen-rompecabeza">
+        </div>
+    </selection>
+    <button onclick="reinicio()"  class="botonesVideo reinicio">Reiniciar</button>
+</main>
+<script src="./script.js"></script>
+</body>
